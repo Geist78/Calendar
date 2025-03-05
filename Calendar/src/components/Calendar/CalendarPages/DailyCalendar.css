@@ -1,0 +1,71 @@
+.daily-calendar-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Hauptbereich */
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Datum-Navigation */
+  .date-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+  }
+  
+  .date-header button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+  
+  /* Kalenderbereich */
+  .calendar-container {
+    display: flex;
+    width: 80%;
+    border: 3px solid black;
+    height: calc(100vh - 80px);
+  }
+  
+  /* Zeitleiste links */
+  .time-column {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5px;
+    border-right: 3px solid black;
+  }
+  
+  .time-label {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  /* Scrollbarer Bereich */
+  .calendar-scroll {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .hour-row {
+    height: 60px;
+    border-bottom: 1px solid black;
+  }
+  
